@@ -1,0 +1,21 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+header,
+body {
+font-family: "Amalia";
+font-weight: 400;
+font-size: 20px;
+background-color: #fff;
+margin: 0;
+ }
+//  a {
+  
+//  }
