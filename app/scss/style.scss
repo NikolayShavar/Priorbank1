@@ -3,4 +3,45 @@
 @import "_fonts";
 @import "_global";
 @import "_media";
+.header {
+  display: flex;
+  width: 100%;
+  height: 136px;
+  .logo {
+    padding-top: 50px;
+    padding-left: 150px;
+  }
+}
+.main__ad {
+  display: flex;
+  background-color: #ffeb01;
+  width: 100%;
+  height: 500px;
+}
+.ad__text{
+  display: block;
+}
+.ad__text-top {
+  padding-top: 50px;
+  padding-left: 150px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 70px;
+}
+.ad__text-bottom {
+  padding-top: 50px;
+  padding-left: 150px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 52px;
+  span {
+    font-weight: bold;
+  }
+}
+.ad__img {
+
+    overflow-clip-margin: content-box;
+    overflow: clip;
+   clip-path: polygon(14% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
 
