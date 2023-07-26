@@ -1,22 +1,35 @@
-// @font-face {
-//     font-family: "amalia";
-//     src:
-//     url("../../fonts/Amalia/Amalia-Bold.woff") format("woff"),
-//     url("../../fonts/Amalia/Amalia-Bold.woff2") format("woff2"),
-//     url("../../fonts/Amalia/Amalia-Light.woff") format("woff"),
-//     url("../../fonts/Amalia/Amalia-Light.woff2") format("woff2"),
-//     url("../../fonts/Amalia/Amalia-Medium.woff") format("woff"),
-//     url("../../fonts/Amalia/Amalia-Medium.woff2") format("woff2"),
-//     url("../../fonts/Amalia/Amalia-Regular.woff") format("woff"),
-//     url("../../fonts/Amalia/Amalia-Regular.woff2") format("woff2");
-// }
-@font-face{
-    font-display:swap;
-    font-family:"Amalia";
-    font-style: normal;
-    font-weight:500;
-    src:
-        local("Amalia"),
-        url("../../fonts/Amalia/Amalia-Medium.woff2") format("woff2"),
-        url("../../fonts/Amalia/Amalia-Medium.woff") format("woff");
+@font-face {
+  font-display: swap;
+  font-family: "Amalia";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Amalia"),
+    url("../fonts/Amalia/Amalia-Light.woff2") format("woff2"),
+    url("../fonts/Amalia/Amalia-Light.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Amalia";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Amalia"),
+    url("../fonts/Amalia/Amalia-Regular.woff2") format("woff2"),
+    url("../fonts/Amalia/Amalia-Regular.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Amalia";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Amalia"),
+    url("../fonts/Amalia/Amalia-Medium.woff2") format("woff2"),
+    url("../fonts/Amalia/Amalia-Medium.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Amalia";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Amalia"), url("../fonts/Amalia/Amalia-Bold.woff2") format("woff2"),
+    url("../fonts/Amalia/Amalia-Bold.woff") format("woff");
 }
