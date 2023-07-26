@@ -70,12 +70,19 @@
 .edge__box {
   background-color: #e4e6ea;
   display: flex;
+  border-radius: 20px;
+  width: 1200px;
+  height: 440px;
 }
 
 .edge__card-png {
+  display: flex;
   position: relative;
+  width: 570px;
+  height: 306px;
   left: 0;
-  bottom: 0;
+  bottom: -134px;
+border-radius: 20px;
 }
 .edge__item {
   display: block;
