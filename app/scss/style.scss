@@ -101,14 +101,14 @@
   background-color: #ffeb01;
   text-align: center;
   margin-right: 50px;
-  &:not(:last-child):after{
+  z-index: 4;
+  &:not(:last-child):after {
     content: "";
     position: absolute;
     display: block;
     width: 4px;
     height: calc(100% + 35px);
     background-color: #ffec00;
-    top: 0;
     left: 18px;
     z-index: 5;
   }
@@ -130,14 +130,14 @@
   span {
   }
 }
-.btn__go{
+.btn__go {
   width: 100%;
-margin: 60px 0 0;
-.btn{
-display: inline-block;
-position: relative;
-height: 70px;
-padding: 0 50px;
-line-height: 70px;
-}
+  margin: 60px 0 0;
+  .btn {
+    display: inline-block;
+    position: relative;
+    height: 70px;
+    padding: 0 50px;
+    line-height: 70px;
+  }
 }
