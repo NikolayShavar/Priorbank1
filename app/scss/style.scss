@@ -6,10 +6,12 @@
 .header {
   display: flex;
   width: 100%;
-  height: 136px;
+  padding: 20px 0;
   .logo {
-    padding-top: 50px;
-    padding-left: 350px;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
   }
 }
 .main__ad {
@@ -73,6 +75,7 @@
   border-radius: 20px;
   width: 1200px;
   height: 440px;
+  padding: 50px;
 }
 
 .edge__card-png {
@@ -81,15 +84,14 @@
   width: 570px;
   height: 306px;
   left: 0;
-  bottom: -134px;
-border-radius: 20px;
+  bottom: -84px;
+  border-radius: 20px;
 }
 .edge__item {
-  display: block;
 }
 
 .edge__number {
-  display: block;
+  position: absolute;
   font-weight: 400;
   font-size: 16px;
   width: 40px;
@@ -99,14 +101,25 @@ border-radius: 20px;
   background-color: #ffeb01;
   text-align: center;
   margin-right: 50px;
+  &:not(:last-child):after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4px;
+    height: calc(100% + 35px);
+    background-color: #ffec00;
+    top: 0;
+    left: 18px;
+    z-index: 5;
+  }
 }
 
 .edge__title {
-  display: flex;
   width: 700;
   font-size: 24px;
   line-height: 30px;
   text-align: center;
+  margin-bottom: 5px;
   span {
   }
 }
@@ -114,7 +127,17 @@ border-radius: 20px;
   width: 400;
   font-size: 20px;
   line-height: 28px;
-  display: flex;
   span {
   }
+}
+.btn__go{
+  width: 100%;
+margin: 60px 0 0;
+.btn{
+display: inline-block;
+position: relative;
+height: 70px;
+padding: 0 50px;
+line-height: 70px;
+}
 }
