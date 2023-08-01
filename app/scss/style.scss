@@ -16,7 +16,7 @@
 }
 .main__ad {
   display: flex;
-  background-color: #ffeb01;
+  background-color: $yellow;
   width: 100%;
   height: 649px;
   margin-bottom: 50px;
@@ -65,12 +65,12 @@
   margin: 50px;
   span {
     font-weight: bold;
-    border-bottom: 2px solid color(#ffeb01);
+    border-bottom: 2px solid color($yellow);
   }
 }
 
 .edge__box {
-  background-color: #e4e6ea;
+  background-color: $grey;
   display: flex;
   border-radius: 20px;
   width: 1200px;
@@ -87,8 +87,7 @@
   bottom: -84px;
   border-radius: 20px;
 }
-.edge__item {
-}
+
 
 .edge__number {
   position: absolute;
@@ -98,7 +97,7 @@
   height: 40px;
   line-height: 40px;
   border-radius: 50%;
-  background-color: #ffeb01;
+  background-color: $yellow;
   text-align: center;
   margin-right: 50px;
   z-index: 4;
@@ -108,11 +107,12 @@
     display: block;
     width: 4px;
     height: calc(100% + 35px);
-    background-color: #ffec00;
+    background-color: $yellow;
     left: 18px;
     z-index: 5;
   }
 }
+
 
 .edge__title {
   width: 700;
@@ -141,3 +141,53 @@
     line-height: 70px;
   }
 }
+ .btn__go{
+display: flex;
+justify-content: center;
+margin-bottom: 50px;
+ }
+
+ .advantages__list1{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+ }
+ .adventages__list2{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+ }
+
+ .advantages__item1{
+  text-align: center;
+background-color: $grey;
+margin: 10px;
+border-radius: 15px;
+.advantages__pic1{
+  margin: 25px;
+}
+.advantages__title1{
+  font-weight: 700;
+  font-size: 26px;
+line-height: 30px;
+margin: 20px auto;
+}
+.advantages__text1{
+font-weight: 500;
+font-size: 20px;
+line-height: 26px;
+margin: 35px;
+}
+ }
+ .advantages__item2{
+  text-align: center;
+background-color: $grey;
+margin: 10px;
+border-radius: 15px;
+.advantages__title2{
+  font-weight: 700;
+  font-size: 26px;
+line-height: 30px;
+}
+.advantages__text2{
+  
+}
+ }
