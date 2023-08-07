@@ -1,0 +1,30 @@
+@media (max-width: 1235px) {
+
+    .container {
+        width: 100%;
+        max-width: auto;
+        margin: 0 auto;
+        padding: 0;
+      }
+
+.edge__box{
+display: block!important; 
+max-width: auto;
+padding: 0!important;
+    }
+    .edge__list{
+        display: block;
+        position: relative;
+        top: -250px;
+    }
+    .edge__card-png{
+        position: relative;
+        padding: 0;
+        margin: 0;
+        right: 0;
+        img{
+        opacity: 0.4;
+    }
+   
+    }
+}

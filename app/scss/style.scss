@@ -84,13 +84,12 @@
 }
 
 .edge__card-png {
-  display: flex;
+  display: block;
   position: relative;
   width: 570px;
   height: 306px;
   left: 0;
   bottom: -84px;
-  border-radius: 20px;
 }
 
 .edge__number {
@@ -213,6 +212,7 @@
 .simple__convenient {
   width: 772px;
   height: 661px;
+  margin: 0 15px;
   .simple__title {
     font-weight: 700;
     font-size: 42px;
@@ -249,7 +249,7 @@
 .mob__bank-png {
   position: absolute;
   display: flex;
-  right: 300px;
+  right: 100px;
   padding-top: 40px;
 }
 
