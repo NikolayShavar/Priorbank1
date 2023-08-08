@@ -7,6 +7,11 @@
         padding: 0;
       }
 
+.ad__text{
+    padding-left: 50px;
+}
+
+
 .edge__box{
 display: block; 
 width: auto;
@@ -27,4 +32,59 @@ padding: 0;
     }
    
     }
+
+    .footer__list {
+        margin: 0;
+        padding: 40px 0;
+    }
+
+}
+@media (max-width: 980px){
+
+.ad__text-top{
+line-height: 50px;
+}
+.ad__text-bottom{
+line-height: 37px;
+}
+
+
+.shared{
+font-size: 35px;
+
+}
+
+.arrange__free {
+    margin: 20px;
+}
+.mob__bank-png{
+    right: 0;
+}
+}
+
+@media (max-width: 955px){
+.mob__bank-png{
+    opacity: 0.4;
+}
+.advantages__messege2{
+    z-index: 5;
+    }
+    .advantages__pic2{
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        opacity: 0.6;
+    }
+
+}
+@media (max-width: 880px){
+    .shared {
+        font-size: 30px;
+    }
+.arrange__free {
+    font-size: 20px;
+}
+}
+@media (max-width: 720px){
+    
 }
