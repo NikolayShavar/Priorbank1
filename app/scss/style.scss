@@ -2,7 +2,7 @@
 @import "_libs";
 @import "_fonts";
 @import "_global";
-@import "_media";
+
 .header {
   display: flex;
   width: 100%;
@@ -286,3 +286,4 @@ footer {
   text-align: center;
   font-size: 18px;
 }
+@import "_media";
