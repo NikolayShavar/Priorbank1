@@ -82,14 +82,25 @@
   position: relative;
   padding-left: 67px;
 }
+.edge__item:not(:last-child):after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 4px;
+  height: calc(100% + 35px);
+  top: 0;
+  left: 85px;
+  background-color: #ffec00;
+  z-index: 4;
+}
+
 
 .edge__card-png {
   display: block;
   position: relative;
-  width: 570px;
-  height: 306px;
   left: 0;
   bottom: -84px;
+
 }
 
 .edge__number {
@@ -107,17 +118,7 @@
     z-index: 5;
   }
 }
-.edge__item:not(:last-child):after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 4px;
-  height: calc(100% + 35px);
-  top: 0;
-  left: 85px;
-  background-color: #ffec00;
-  z-index: 4;
-}
+
 
 .edge__title {
   padding-left: 50px;
@@ -210,7 +211,6 @@
 }
 
 .simple__convenient {
-  width: 772px;
   height: 661px;
   margin: 0 15px;
   .simple__title {

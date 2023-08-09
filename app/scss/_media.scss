@@ -86,5 +86,64 @@ font-size: 35px;
 }
 }
 @media (max-width: 720px){
-    
+    .main__ad{
+        background: none;
+    }
+
+.ad__text::after{
+    content: '';
+background: url(../images/mgm3.png);
+background-repeat: no-repeat;
+opacity: 0.4;
+top: 80px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+.ad__img {
+    display: none;
+}
+.shared {
+        font-size: 25px;
+    }
+.arrange__free {
+    font-size: 15px;
+}
+
+}
+
+@media (max-width: 640px){
+.shared{
+    max-width: 300px;
+    line-height: 28px;
+    left: 0;
+    right: 0;
+
+}
+
+.advantages__item1{
+margin: 1px;
+.advantages__pic1{
+    margin: 10px;
+}
+.advantages__title1{
+    margin: 10px auto;
+font-size: 20px;
+}
+.advantages__text1{
+font-size: 18px;
+margin: 5px;
+}
+}
+
+.edge__card-png{
+    overflow: hidden;
+}
+.libs__badges{
+    gap: 1%;
+    justify-content: center;
+}
 }
