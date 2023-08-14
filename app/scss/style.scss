@@ -220,9 +220,11 @@
   ul {
     li {
       position: relative;
+      padding-top: 20px;
       padding-left: 35px;
       margin-bottom: 10px;
       list-style: none;
+      
       &::before {
         content: "";
         display: block;
@@ -244,6 +246,7 @@
   text-align: center;
   margin-top: 80px;
   gap: 50px;
+  padding-bottom: 80px;
 }
 .mob__bank-png {
   position: absolute;
