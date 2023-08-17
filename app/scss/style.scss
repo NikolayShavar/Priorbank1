@@ -19,7 +19,7 @@
   background-color: $yellow;
   width: 100%;
   height: 649px;
-  margin-bottom: 50px;
+  margin-bottom: 67px;
 }
 .ad__text {
   display: block;
@@ -54,6 +54,7 @@
   font-weight: 700;
   font-size: 42px;
   line-height: 60px;
+  margin-bottom: 57px;
 }
 .arrange__free {
   display: flex;
@@ -62,10 +63,23 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 33px;
-  margin: 50px;
-  span {
+  margin: 25px;
+  span{
     font-weight: 700;
-    background-color: $yellow;
+    position: relative;
+    left: 5px;
+
+  }
+  span::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 102%;
+    height: 0.35em;
+    left: -1%;
+    bottom: 8px;
+    background-color: #ffec00;
+    z-index: -5;
   }
 }
 
@@ -76,6 +90,7 @@
   width: 1200px;
   height: 440px;
   padding: 50px;
+  margin: 0 auto;
 }
 .edge__item {
   display: block;
@@ -152,7 +167,7 @@
 .btn__go {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 57px;
 }
 
 .advantages__list1 {
@@ -230,7 +245,6 @@
         position: absolute;
         width: 26px;
         height: 26px;
-        top: 2px;
         left: 1px;
         background-image: url(../images/checker.svg);
         background-repeat: no-repeat;
