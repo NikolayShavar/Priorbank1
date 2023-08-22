@@ -39,15 +39,15 @@ function fonts() {
 }
 
 function images() {
-  return src(["app/images/src/*.*", "!app/images/src/*.svg"]) // восклицательный знак означает 'кроме'
-    .pipe(newer("app/images"))
-    .pipe(avif({ quality: 50 }))
+  return src(["src/images/*.*"]) // восклицательный знак означает 'кроме'
+    // .pipe(newer("app/images"))
+    // .pipe(avif({ quality: 50 }))
 
-    .pipe(src("app/images/src/*.*"))
-    .pipe(newer("app/images"))
-    .pipe(webp())
+    // .pipe(src("app/images/src/*.*"))
+    // .pipe(newer("app/images"))
+    // .pipe(webp())
 
-    .pipe(src("app/images/src/*.*"))
+    // .pipe(src("app/images/src/*.*"))
     .pipe(newer("app/images"))
     .pipe(imagemin())
 
