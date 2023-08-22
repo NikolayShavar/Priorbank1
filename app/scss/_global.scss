@@ -16,22 +16,27 @@ body {
   font-size: 20px;
   background-color: #fff;
   margin: 0;
-
 }
 .container {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 15px;
-
 }
 
-.btn{
+.btn {
   border-radius: 15px;
   background-color: $yellow;
   text-align: center;
   text-decoration: none;
   font-weight: 700;
   padding: 0 50px;
-
+  color: #2b2a29;
+  box-shadow: 0 5px 30px rgba(255, 214, 0, 0.5);
+  background: linear-gradient(90deg, #ffd600 3.75%, #ffd600 93.62%);
+  transition: all 0.5s;
+}
+.btn:hover {
+  box-shadow: 0 5px 30px rgba(255, 213, 0, 0.956);
+  transition: all 0.5s;
 }

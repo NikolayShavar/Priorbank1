@@ -264,7 +264,7 @@
 .mob__bank-png {
   position: absolute;
   display: flex;
-  right: 100px;
+  right: 411px;
   padding-top: 40px;
 
 
@@ -292,17 +292,19 @@ footer {
   align-items: center;
   text-align: center;
   width: 33.33333%;
+  height: 75px;
 }
 .footer__item1 {
-  border-right: 2px solid #ffff;
+  border-right: 2px solid #ffec00;
 }
 .footer__item2 {
   border-right: 2px solid #ffec00;
 }
 .footer__copyright {
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid grey;
   justify-content: center;
   text-align: center;
   font-size: 18px;
+  padding: 24px;
 }
 @import "_media";
