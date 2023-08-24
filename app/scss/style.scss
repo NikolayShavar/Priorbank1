@@ -2,11 +2,17 @@
 @import "_libs";
 @import "_fonts";
 @import "_global";
+@import "_mixins";
 
 .header {
   display: flex;
   width: 100%;
   padding: 20px 0;
+
+  @include media($xl) {
+	background: red;
+  }
+
   .logo {
     width: 100%;
     max-width: 1280px;
