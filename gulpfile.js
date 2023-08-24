@@ -39,19 +39,21 @@ function fonts() {
 }
 
 function images() {
-  return src(["src/images/*.*"]) // восклицательный знак означает 'кроме'
-    // .pipe(newer("app/images"))
-    // .pipe(avif({ quality: 50 }))
+  return (
+    src(["src/images/*.*"]) // восклицательный знак означает 'кроме'
+      // .pipe(newer("app/images"))
+      // .pipe(avif({ quality: 50 }))
 
-    // .pipe(src("app/images/src/*.*"))
-    // .pipe(newer("app/images"))
-    // .pipe(webp())
+      // .pipe(src("app/images/src/*.*"))
+      // .pipe(newer("app/images"))
+      // .pipe(webp())
 
-    // .pipe(src("app/images/src/*.*"))
-    .pipe(newer("app/images"))
-    .pipe(imagemin())
+      // .pipe(src("app/images/src/*.*"))
+      .pipe(newer("app/images"))
+      .pipe(imagemin())
 
-    .pipe(dest("app/images"));
+      .pipe(dest("app/images"))
+  );
 }
 
 function sprite() {
@@ -95,7 +97,7 @@ function watching() {
     },
   });
   watch(["app/scss/*.scss"], styles);
-  watch(["app/images/src"], images);
+  watch(["src/images"], images);
   watch(["app/js/main.js"], scripts);
   watch(["app/components/*", "app/pages/*"], pages);
   watch(["app/*.html"]).on("change", browserSync.reload); //отображает изменения в браузере

@@ -2,9 +2,9 @@
 @import "_libs";
 @import "_fonts";
 @import "_global";
+@import "_mixins";
 
 .header {
-  display: flex;
   width: 100%;
   padding: 20px 0;
   .logo {
@@ -13,41 +13,72 @@
     margin: 0 auto;
     padding: 0 15px;
   }
+
+  @include media($xl) {
+  }
+
+  @include media($lg) {
+    justify-content: center;
+    text-align: center;
+  }
+
+  @include media($md) {
+  }
 }
-.main__ad {
+
+.wrapper {
   display: flex;
+  box-orient: vertical;
+  box-direction: normal;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.main__ad {
+  position: relative;
   background-color: $yellow;
-  width: 100%;
-  height: 649px;
-  margin-bottom: 67px;
+
+  @include media($xl) {
+    height: 500px;
+  }
 }
 .ad__text {
-  display: block;
-  padding-left: 350px;
+  display: flex;
+  box-orient: vertical;
+  box-direction: normal;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 490px;
+  height: 649px;
 }
 .ad__text-top {
-  padding-top: 150px;
-  font-weight: 700;
+  margin-bottom: 40px;
   font-size: 50px;
-  line-height: 70px;
+  line-height: 1.2;
 }
 .ad__text-bottom {
-  padding-top: 50px;
-  
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 52px;
+  font-size: 32px;
   span {
     font-weight: 700;
   }
 }
 .ad__img {
-  overflow-clip-margin: content-box;
-  overflow: clip;
+  position: absolute;
+  top: 0;
+  left: 500px;
+  width: 1159px;
+  height: 649px;
+  background-color: #ccc;
+  z-index: 10;
   clip-path: polygon(14% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+  @include media($xl) {
+    height: 500px;
+  }
 }
 
-.shared {
+.section-title__text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,7 +87,7 @@
   line-height: 60px;
   margin-bottom: 57px;
 }
-.arrange__free {
+.section-title__descr {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,11 +95,10 @@
   font-size: 24px;
   line-height: 33px;
   margin: 25px;
-  span{
+  span {
     font-weight: 700;
     position: relative;
     left: 5px;
-
   }
   span::after {
     content: "";
@@ -109,13 +139,11 @@
   z-index: 4;
 }
 
-
 .edge__card-png {
   display: block;
   position: relative;
   left: 0;
   bottom: -84px;
-
 }
 
 .edge__number {
@@ -133,7 +161,6 @@
     z-index: 5;
   }
 }
-
 
 .edge__title {
   padding-left: 50px;
@@ -206,7 +233,6 @@
   margin: 10px;
   border-radius: 15px;
 
-
   .advantages__messege2 {
     display: block;
     text-align: left;
@@ -238,7 +264,7 @@
       padding-left: 35px;
       margin-bottom: 10px;
       list-style: none;
-      
+
       &::before {
         content: "";
         display: block;
@@ -266,8 +292,6 @@
   display: flex;
   right: 411px;
   padding-top: 40px;
-
-
 }
 
 footer {
@@ -277,8 +301,6 @@ footer {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-
-
 }
 .footer__list {
   display: flex;
@@ -307,4 +329,3 @@ footer {
   font-size: 18px;
   padding: 24px;
 }
-@import "_media";
