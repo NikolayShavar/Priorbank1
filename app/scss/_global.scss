@@ -5,7 +5,11 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
 }
 
 header,
@@ -18,7 +22,7 @@ body {
   margin: 0;
 }
 
-img{
+img {
   display: block;
   max-width: 100%;
 }
