@@ -8,6 +8,22 @@ html {
   box-sizing: border-box;
 }
 
+strong {
+  font-weight: bold;
+}
+
+.underline:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 102%;
+  height: 0.35em;
+  left: -1%;
+  bottom: 4px;
+  background-color: #ffec00;
+  z-index: -5;
+}
+
 div {
   display: block;
 }
