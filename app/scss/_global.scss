@@ -12,6 +12,10 @@ strong {
   font-weight: bold;
 }
 
+blockquote, body, dd, dl, figcaption, figure, h1, h2, h3, h4, li, ol[class], p, ul[class] {
+  margin: 0;
+}
+
 .underline:after {
   content: "";
   position: absolute;
@@ -65,4 +69,13 @@ img {
 .btn:hover {
   box-shadow: 0 5px 30px rgba(255, 213, 0, 0.956);
   transition: all 0.5s;
+}
+
+a {
+  color: #01030F;
+  text-decoration: underline;
+}
+
+ol[class], ul[class] {
+  list-style: none;
 }

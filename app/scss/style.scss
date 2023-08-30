@@ -155,7 +155,7 @@
   margin-bottom: 5px;
   font-size: 24px;
   font-weight: 700;
-  .underline{
+  .underline {
     position: relative;
     z-index: 5;
   }
@@ -240,7 +240,6 @@
 .maintenance-2 .middle-item__icon .icon {
   width: 28px;
   height: 28px;
-
 }
 
 .maintenance-2 .middle-item {
@@ -260,95 +259,179 @@
   font-size: 18px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.simple__convenient {
-  margin: 0 15px;
-  .simple__title {
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 54px;
-  }
-  ul {
-    li {
-      position: relative;
-      padding-top: 20px;
-      padding-left: 35px;
-      margin-bottom: 10px;
-      list-style: none;
-
-      &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 26px;
-        height: 26px;
-        left: 1px;
-        background-image: url(../images/checker.svg);
-        background-repeat: no-repeat;
-        background-size: 20px 20px;
-      }
-    }
-  }
+.maintenance-2__bottom-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 26px;
 }
 
-.libs__badges {
-  display: flex;
-  text-align: center;
-  margin-top: 80px;
-  gap: 50px;
-  padding-bottom: 80px;
+.maintenance-2 .bottom-item {
+  position: relative;
+  padding: 48px 45px;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  z-index: 1;
 }
-.mob__bank-png {
+
+.maintenance-2 .bottom-item--color-1 {
+  background-color: #e4e6ea;
+}
+
+.maintenance-2 .bottom-item__icon {
   position: absolute;
-  display: flex;
-  right: 411px;
-  padding-top: 40px;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 0;
+  width: 192px;
+  height: 192px;
+  z-index: -1;
 }
 
-footer {
-  background-color: #2b2d33;
-  color: #fff;
-  width: 100%;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
+.maintenance-2 .bottom-item__title {
+  margin-bottom: 16px;
+  font-size: 28px;
+  font-weight: 700;
 }
-.footer__list {
+
+.maintenance-2 .bottom-item__descr {
+  max-width: 360px;
+  font-size: 18px;
+}
+
+.simple-mob-bank .section-title {
+  max-width: 740px;
+  margin-bottom: 80px;
+}
+.simple-mob-bank {
+  padding: 90px 0 110px;
+}
+
+.simple-mob-bank .container {
+  position: relative;
+}
+
+.simple-mob-bank__list {
+  max-width: 600px;
+}
+
+.libs-app {
   display: flex;
-  margin: 0 150px;
+  gap: 40px;
+}
+
+.simple-mob-bank .libs-app {
+  margin-top: 80px;
+}
+
+
+
+.libs-app__link {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.clist li {
+  position: relative;
+  padding-left: 35px;
+}
+
+.clist li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.clist li:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  left: 1px;
+ background-image: url("../images/checker.svg");
+  background-size: 20px 20px;
+}
+
+
+.libs-app {
+  display: flex;
+  gap: 40px;
+}
+
+.simple-mob-bank .libs-app {
+  margin-top: 80px;
+}
+
+.simple-mob-bank__fig {
+  position: absolute;
+  top: -35px;
+  right: 0;
+}
+
+.simple-mob-bank__fig img {
+  max-width: 400px;
+}
+
+
+.footer {
+  position: relative;
+  background: #2B2A28;
+}
+
+.scroll-top {
+  position: fixed;
+  display: none;
+  bottom: 60px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: #ffec00;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transform: translate(0, 140px);
+  z-index: 777;
+}
+
+.footer__content {
   padding: 80px 0;
 }
-.footer__item {
-  padding: 0 15px;
+
+.footer__list {
+  display: flex;
   justify-content: center;
+}
+
+.footer__list-item {
   display: flex;
   align-items: center;
-  text-align: center;
-  width: 33.33333%;
-  height: 75px;
-}
-.footer__item1 {
-  border-right: 2px solid #ffec00;
-}
-.footer__item2 {
-  border-right: 2px solid #ffec00;
-}
-.footer__copyright {
-  border-top: 1px solid grey;
   justify-content: center;
-  text-align: center;
+  flex-shrink: 0;
+  width: 33.3333333333%;
+  padding: 0 15px;
   font-size: 18px;
-  padding: 24px;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
+.footer__list-item:not(:last-child) {
+  border-right: 2px solid #ffec00;
+}
+
+.footer__copyright {
+  padding: 11px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+}
+
+.footer__copyright-text {
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+}
+
+.footer__copyright-text a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
 }
