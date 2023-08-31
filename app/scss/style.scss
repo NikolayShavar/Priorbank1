@@ -5,14 +5,20 @@
 @import "_mixins";
 
 .header {
-  width: 100%;
-  padding: 20px 0;
-  .logo {
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 15px;
+  @include media($xl) {
   }
+
+  @include media($lg) {
+    justify-content: center;
+    text-align: center;
+  }
+
+  @include media($md) {
+  }
+}
+
+.header {
+  padding: 20px 0;
 
   @include media($xl) {
   }
@@ -26,6 +32,68 @@
   }
 }
 
+.header__inner {
+  display: flex;
+  align-items: center;
+}
+
+.hero__bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 500px;
+  width: 1159px;
+  height: 649px;
+  background-color: #ccc;
+  clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 100%);
+  z-index: 10;
+
+  @include media($xl) {
+    left: 475px;
+    width: 910px;
+  }
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 490px;
+  height: 649px;
+}
+.hero {
+  background-color: $yellow;
+  .container {
+    position: relative;
+  }
+}
+
+.hero__bg img {
+  object-fit: cover;
+}
+
+.hero__bg img,
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+.hero__bg .hero__content {
+  @include media($xl) {
+    height: 500px;
+  }
+}
+
+.hero .title {
+  margin-bottom: 40px;
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+.hero__descr {
+  font-size: 32px;
+}
+
 .wrapper {
   display: flex;
   box-orient: vertical;
@@ -33,56 +101,6 @@
   flex-direction: column;
   min-height: 100vh;
   overflow: hidden;
-}
-
-.main__ad {
-  position: relative;
-  background-color: $yellow;
-  .container {
-    position: relative;
-  }
-
-  @include media($xl) {
-    height: 500px;
-  }
-}
-.ad__text {
-  display: flex;
-  box-orient: vertical;
-  box-direction: normal;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-right: #ccc;
-  max-width: 490px;
-  height: 649px;
-  padding-left: 50px;
-  padding-right: 125px;
-}
-.ad__text-top {
-  margin-bottom: 40px;
-  font-size: 50px;
-  line-height: 1.2;
-}
-.ad__text-bottom {
-  font-size: 32px;
-  span {
-    font-weight: 700;
-  }
-}
-.ad__img {
-  position: absolute;
-  top: 0;
-  left: 500px;
-  width: 1159px;
-  height: 649px;
-  background-color: #ccc;
-  z-index: 10;
-  clip-path: polygon(14% 0%, 100% 0%, 100% 100%, 0% 100%);
-
-  @include media($xl) {
-    height: 500px;
-  }
 }
 
 .section-title {
@@ -324,8 +342,6 @@
   margin-top: 80px;
 }
 
-
-
 .libs-app__link {
   position: relative;
   transition: transform 0.3s ease;
@@ -347,10 +363,9 @@
   height: 20px;
   top: 2px;
   left: 1px;
- background-image: url("../images/checker.svg");
+  background-image: url("../images/checker.svg");
   background-size: 20px 20px;
 }
-
 
 .libs-app {
   display: flex;
@@ -371,10 +386,9 @@
   max-width: 400px;
 }
 
-
 .footer {
   position: relative;
-  background: #2B2A28;
+  background: #2b2a28;
 }
 
 .scroll-top {
